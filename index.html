@@ -6,179 +6,161 @@
     <title>Survey Form</title>
     <style>
         body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #282823;
-    color: #f5e8b6;
-    text-align: center;
-    padding: 20px;
-}
+            font-family: 'Montserrat', sans-serif;
+            background-color: #282823;
+            color: #f5e8b6;
+            text-align: center;
+            padding: 20px;
+        }
 
-form {
-    background-color: #595c56;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 700px;
-    margin: auto;
-}
+        form {
+            background-color: #595c56;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: auto;
+        }
 
-header {
-    font-size: 15;
-    font-weight: 600;
-    background-color: #e9be5f;
-    color: #282823;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-}
+        header {
+            font-size: 15px;
+            font-weight: 600;
+            background-color: #e9be5f;
+            color: #282823;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
 
-p {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-}
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+        }
 
-table {
-    width: 90%;
-    border-collapse: collapse;
-    background-color: #282823;
-    color: #f5e8b6;
-    margin: auto;
-}
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            background-color: #282823;
+            color: #f5e8b6;
+            margin: auto;
+        }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-    /*border: 1px solid #e9be5f;*/
-}
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
 
-th {
-    background-color: #e9be5f;
-    color: #282823;
-    font-weight: 600;
-} 
+        th {
+            background-color: #e9be5f;
+            color: #282823;
+            font-weight: 600;
+        }
 
-td:first-child {
-    text-align: left;
-    font-weight: 400;
-}
+        input[type="radio"], input[type="checkbox"] {
+            transform: scale(1.2);
+        }
 
-input[type="radio"] {
-    transform: scale(1.2);
-}
+        textarea, input[type="text"], input[type="email"] {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #e9be5f;
+            border-radius: 4px;
+            background-color: #595c56;
+            color: #f5e8b6;
+        }
 
-textarea, input[type="text"], input[type="email"] {
-    width: 90%;
-    padding: 8px;
-    border: 1px solid #e9be5f;
-    border-radius: 4px;
-    background-color: #595c56;
-    color: #f5e8b6;
-}
+        .contact-table td:first-child {
+            width: 30%;
+            font-weight: 600;
+            color: #e9be5f;
+        }
 
-.contact-table {
-    width: 100%;
-    margin-top: 10px;
-}
+        button {
+            background-color: #e9be5f;
+            color: #282823;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
 
-.contact-table td {
-    padding: 10px;
-    text-align: left;
-}
-
-.contact-table td:first-child {
-    width: 30%;
-    font-weight: 600;
-    color: #e9be5f;
-}
-
-input[type="submit"], input[type="reset"] {
-    background-color: #e9be5f;
-    color: #282823;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: #f5e8b6;
-}
+        button:hover {
+            background-color: #f5e8b6;
+        }
 
     </style>
+</head>
 
-<head>
 <body>
     <h2>Survey Form</h2>
     <form>
-    <header>Section 1</header>
+        <header>Section 1</header>
 
-    <p><b>1.1 Which of the following services do you see?</b></p>
-<table>
-    <table>
-        <tr> 
-            <th></th>
-            <th></th>
-    <tr>
-        <td><input type="checkbox" name="service" value="Service1"> Service 1</td> 
-        <td><input type="checkbox" name="service" value="Service2"> Service 2</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="service" value="Service3"> Service 3</td>
-        <td><input type="checkbox" name="service" value="Service4"> Service 4</td> 
-    </tr>
-    <th background-color = "#282823"><input type="checkbox" name="service" value="Other"> Other:<input type="text" name ="other_service"></th> 
-    
-</table>
+        <p><b>1.1 Which of the following services do you see?</b></p>
+        <table>
+            <tr>
+                <td><input type="checkbox" name="service" value="Service1"> Service 1</td>
+                <td><input type="checkbox" name="service" value="Service2"> Service 2</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="service" value="Service3"> Service 3</td>
+                <td><input type="checkbox" name="service" value="Service4"> Service 4</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="service" value="Other"> Other: 
+                    <input type="text" name="other_service">
+                </td>
+            </tr>
+        </table>
+
         <p><b>1.2 How would you rate our service in terms of:</b></p>
-        <table width = "90%" border-collapse = "collapse" background-color = "#282823" color = "#f5e8b6" margin = "auto">
+        <table>
             <tr>
-                <th padding = "12px" align="left" border = "1px solid #e9be5f" background-color = "#e9be5f;
-                color = "#282823" font-weight = "600"></th>
-                <th padding = "12px" align="left" border = "1px solid #e9be5f" background-color = "#e9be5f;
-                color = "#282823" font-weight = "600">Excellent</th>
-                <th padding = "12px" align="left" border = "1px solid #e9be5f" background-color = "#e9be5f;
-                color = "#282823" font-weight = "600">Very Good</th>
-                <th padding = "12px" align="left" border = "1px solid #e9be5f">Good</th>
-                <th padding = "12px" align="left" border = "1px solid #e9be5f">Fair</th>
-                <th padding = "12px" align="left" border = "1px solid #e9be5f">Poor</th>
+                <th></th>
+                <th>Excellent</th>
+                <th>Very Good</th>
+                <th>Good</th>
+                <th>Fair</th>
+                <th>Poor</th>
             </tr>
             <tr>
-                <td align="right">Your Overall Experience:</td>
-                <td><input type="radio" name="experience" value="Excellent"></td>
-                <td><input type="radio" name="experience" value="Very Good"></td>
-                <td><input type="radio" name="experience" value="Good"></td>
-                <td><input type="radio" name="experience" value="Fair"></td>
-                <td><input type="radio" name="experience" value="Poor"></td>
+                <td>Your Overall Experience:</td>
+                <td><input type="radio" name="experience1" value="Excellent"></td>
+                <td><input type="radio" name="experience1" value="Very Good"></td>
+                <td><input type="radio" name="experience1" value="Good"></td>
+                <td><input type="radio" name="experience1" value="Fair"></td>
+                <td><input type="radio" name="experience1" value="Poor"></td>
             </tr>
             <tr>
-                <td align="right">The Value of our Service:</td>
-                <td><input type="radio" name="experience" value="Excellent"></td>
-                <td><input type="radio" name="experience" value="Very Good"></td>
-                <td><input type="radio" name="experience" value="Good"></td>
-                <td><input type="radio" name="experience" value="Fair"></td>
-                <td><input type="radio" name="experience" value="Poor"></td>
+                <td>The Value of our Service:</td>
+                <td><input type="radio" name="experience2" value="Excellent"></td>
+                <td><input type="radio" name="experience2" value="Very Good"></td>
+                <td><input type="radio" name="experience2" value="Good"></td>
+                <td><input type="radio" name="experience2" value="Fair"></td>
+                <td><input type="radio" name="experience2" value="Poor"></td>
             </tr>
             <tr>
-                <td align="right">Promptness of our Service:</td>
-                <td><input type="radio" name="experience" value="Excellent"></td>
-                <td><input type="radio" name="experience" value="Very Good"></td>
-                <td><input type="radio" name="experience" value="Good"></td>
-                <td><input type="radio" name="experience" value="Fair"></td>
-                <td><input type="radio" name="experience" value="Poor"></td>
+                <td>Promptness of our Service:</td>
+                <td><input type="radio" name="experience3" value="Excellent"></td>
+                <td><input type="radio" name="experience3" value="Very Good"></td>
+                <td><input type="radio" name="experience3" value="Good"></td>
+                <td><input type="radio" name="experience3" value="Fair"></td>
+                <td><input type="radio" name="experience3" value="Poor"></td>
             </tr>
             <tr>
-                <td align="right">The Courtesy of our Staff:</td>
-                <td><input type="radio" name="experience" value="Excellent"></td>
-                <td><input type="radio" name="experience" value="Very Good"></td>
-                <td><input type="radio" name="experience" value="Good"></td>
-                <td><input type="radio" name="experience" value="Fair"></td>
-                <td><input type="radio" name="experience" value="Poor"></td>
+                <td>The Courtesy of our Staff:</td>
+                <td><input type="radio" name="experience4" value="Excellent"></td>
+                <td><input type="radio" name="experience4" value="Very Good"></td>
+                <td><input type="radio" name="experience4" value="Good"></td>
+                <td><input type="radio" name="experience4" value="Fair"></td>
+                <td><input type="radio" name="experience4" value="Poor"></td>
             </tr>
         </table>
 
@@ -203,8 +185,8 @@ input[type="submit"]:hover, input[type="reset"]:hover {
         </table>
 
         <br>
-        <td><input type="text" value="Submit"></td>
-        <td><input type="text" value="Reset"></td>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
     </form>
 </body>
-</head>
+</html>
